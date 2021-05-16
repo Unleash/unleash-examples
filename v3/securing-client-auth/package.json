@@ -1,0 +1,14 @@
+{
+  "name": "client-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client-auth-unleash.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "unleash-server": "^3.17.6"
+  }
+}
