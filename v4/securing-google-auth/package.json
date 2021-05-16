@@ -1,0 +1,16 @@
+{
+  "name": "google-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "google-auth-hook.js",
+  "scripts": {
+    "start": "GOOGLE_CALLBACK_URL=http://localhost:4242/api/auth/callback node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@passport-next/passport": "^3.1.0",
+    "@passport-next/passport-google-oauth2": "^1.0.0",
+    "unleash-server": "^4.0.0-beta.5"
+  }
+}

@@ -1,7 +1,6 @@
 'use strict';
 
-// const unleash = require('unleash-server');
-const unleash = require('../dist/lib/server-impl.js');
+const unleash = require('unleash-server');
 
 const enableKeycloak = require('./keycloak-auth-hook');
 
