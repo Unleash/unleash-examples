@@ -27,7 +27,7 @@ The server is now running on http://localhost:4242, and have logged keys for usi
 {"level":"warn","message":"Development proxy is now available at http://localhost:4242/api/development/proxy with key: 1154fd724a5166f0cbd711b2e282b1ea4c106780bc4c9567cde7c4ed71283013"}
 {"level":"info","message":"Configuring Unleash Proxy for production environment"}
 {"level":"info","message":"Proxy setup for production"}
-{"level":"warn","message":"Production proxy is now available at http://localhost:4242/api/development/proxy with key: 9b6b72e46521d85cfda3af856d50a284476f82ae3dcc3f5e778c6fd559d97f59"}
+{"level":"warn","message":"Production proxy is now available at http://localhost:4242/api/production/proxy with key: 9b6b72e46521d85cfda3af856d50a284476f82ae3dcc3f5e778c6fd559d97f59"}
 
 ```
 
