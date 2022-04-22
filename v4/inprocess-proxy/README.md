@@ -66,7 +66,7 @@ This uses the standard authentication setup, so you can log in and configure tog
 
 - Then we set up a middleware for unleash server which checks the authorization header on each request.
     - If the authorization header is equal to the random key we created,
-      we setup an ApiUser with `client` access rights and set that on the request before passing control back to unleash.
+      we create an ApiUser with `client` access rights and set those rights on the request before passing control back to Unleash.
 
 ```typescript
     const createToken = (env) => {
