@@ -48,7 +48,8 @@ curl -H"Authorization: <key logged to console for production> http://localhost:4
  
 This uses the standard authentication setup, so you can log in and configure toggles by using the following username/password:
 
-`username: admin / password: unleash4all`
+- username: `admin`
+- password: `unleash4all`
 
 
 
