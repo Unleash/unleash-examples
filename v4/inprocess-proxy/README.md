@@ -10,7 +10,7 @@ CREATE DATABASE unleashwithproxy WITH OWNER 'unleash_user';
 
 ### Install dependencies
 ```shell
-$ yarn
+yarn
 ```
 
 ### Start server
