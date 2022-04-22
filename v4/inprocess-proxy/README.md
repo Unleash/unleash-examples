@@ -58,7 +58,7 @@ This uses the standard authentication setup, so you can log in and configure tog
 ## Explanation / How it's done
 
 ### createProxy
-- First we create a createProxy function. See [create-proxy.ts](./src/create-proxy.ts).
+- First we create a `createProxy` function. See [create-proxy.ts](./src/create-proxy.ts).
     - This configures a cryptographically random key for communication between the proxy and the unleash-server.
 ```typescript
     const communicationToken = crypto.randomBytes(20).toString('hex');
