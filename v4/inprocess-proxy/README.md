@@ -120,7 +120,7 @@ proxyBasePath: `${basePath}/api/${environment}`
 
 ### index.ts
 - In [index.ts](./src/index.ts) we
-    - Configure a preHook for unleash which will:
+    - Configure a `preHook` for unleash which will:
         - Configure a random proxy key for each environment we want to have a running proxy for.
             - For a production setup, this should probably be changed to reading the desired key from an environment key or file. (Telling our proxy users to change their key every time we restart the server would be troublesome.)
         - We then call the `createProxy` function once for each environment we want to have a proxy enabled for. In this case, that's development and production
