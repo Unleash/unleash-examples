@@ -92,7 +92,7 @@ This uses the standard authentication setup, so you can log in and configure tog
 ```
 - If the authorization header is not equal to our random key, our `preHook` is done and control is passed on to the next handler in the chain.
 - This allows Unleash to treat our in-process proxy as a client, without ever having to add an API key to the database.
-- Finally, we call the unleash-proxy's createApp method (which we've renamed here to `proxy`)
+- Finally, we call the Unleash proxy's createApp method (which we've renamed here to `proxy`)
 
 ```typescript
     proxy(
