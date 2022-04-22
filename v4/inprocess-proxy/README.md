@@ -64,7 +64,7 @@ This uses the standard authentication setup, so you can log in and configure tog
     const communicationToken = crypto.randomBytes(20).toString('hex');
 ```
 
-- Then we set up a middleware for unleash server which checks the authorization header on each request.
+- Then we set up a middleware for the Unleash server which checks the authorization header on each request.
     - If the authorization header is equal to the random key we created,
       we create an ApiUser with `client` access rights and set those rights on the request before passing control back to Unleash.
 
