@@ -112,7 +112,7 @@ This uses the standard authentication setup, so you can log in and configure tog
     );
 ```
 
-- We see that we ask the proxy to use a common basepath with Unleash
+- We configure the proxy to use the same base path as Unleash
 ```typescript
 proxyBasePath: `${basePath}/api/${environment}`
 ```
