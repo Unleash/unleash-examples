@@ -25,7 +25,7 @@ const  { AuthenticationRequired } = require('unleash-server');
 const host = process.env.AUTH_HOST;
 const realm = process.env.AUTH_REALM;
 const clientID = process.env.AUTH_CLIENT_ID;
-const contextPath = process.env.CONTEXT_PATH;
+const contextPath = process.env.CONTEXT_PATH || '';
 
 function enableKeycloakOauth(app, config, services) {
     const { baseUriPath } = config.server;
@@ -40,8 +40,8 @@ function enableKeycloakOauth(app, config, services) {
                 clientID,
                 clientSecret: "We don't need that, but is required",
                 callbackURL: `${contextPath}/api/auth/callback`,
-                authorizationURL: `${host}/auth/realms/${realm}/protocol/openid-connect/auth`,
-                tokenURL: `${host}/auth/realms/${realm}/protocol/openid-connect/token`,
+                authorizationURL: `${host}/realms/${realm}/protocol/openid-connect/auth`,
+                tokenURL: `${host}/realms/${realm}/protocol/openid-connect/token`,
                 userInfoURL: `${host}/auth/realms/${realm}/protocol/openid-connect/userinfo`,
             },
     
@@ -72,13 +72,14 @@ function enableKeycloakOauth(app, config, services) {
         },
     );
 
-    app.use('/api/admin/', (req, res, next) => {
+    app.use('/api', (req, res, next) => {
+        console.log(`req.user is ${req.user}`);
         if (req.user) {
             return next();
         }
         // Instruct unleash-frontend to pop-up auth dialog
         return res
-            .status('401')
+            .status(401)
             .json(
                 new AuthenticationRequired({
                     path: `${contextPath}/api/admin/login`,
