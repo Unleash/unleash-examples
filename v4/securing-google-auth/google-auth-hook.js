@@ -69,13 +69,13 @@ function enableGoogleOauth(app, config, services) {
         },
     );
 
-    app.use('/api/admin/', (req, res, next) => {
+    app.use('/api', (req, res, next) => {
         if (req.user) {
             return next();
         }
         // Instruct unleash-frontend to pop-up auth dialog
         return res
-            .status('401')
+            .status(401)
             .json(
                 new AuthenticationRequired({
                     path: '/api/admin/login',
