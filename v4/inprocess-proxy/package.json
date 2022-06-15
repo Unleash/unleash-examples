@@ -13,8 +13,8 @@
     "start": "node dist/start.js"
   },
   "dependencies": {
-    "@unleash/proxy": "^0.8.0",
-    "unleash-server": "^4.9.1",
+    "@unleash/proxy": "^0.8.1",
+    "unleash-server": "^4.12.6",
     "winston": "^3.7.2"
   },
   "devDependencies": {
