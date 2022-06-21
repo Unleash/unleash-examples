@@ -1,5 +1,12 @@
 {
   "extends": [
     "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchPaths": ["v3/"],
+      "matchPackageNames": ["unleash-server"],
+      "allowedVersions": "< 4"
+    }
   ]
 }
