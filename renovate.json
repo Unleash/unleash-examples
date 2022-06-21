@@ -6,7 +6,7 @@
     {
       "matchPaths": ["v3/"],
       "matchPackageNames": ["unleash-server"],
-      "allowedVersions": "<=3.17.6"
+      "allowedVersions": "< 4"
     }
   ]
 }
