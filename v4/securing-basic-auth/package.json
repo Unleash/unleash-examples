@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "unleash-server": "^4.12.6"
+    "unleash-server": "^4.13.0"
   }
 }
