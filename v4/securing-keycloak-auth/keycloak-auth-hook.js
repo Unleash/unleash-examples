@@ -42,7 +42,7 @@ function enableKeycloakOauth(app, config, services) {
                 callbackURL: `${contextPath}/api/auth/callback`,
                 authorizationURL: `${host}/realms/${realm}/protocol/openid-connect/auth`,
                 tokenURL: `${host}/realms/${realm}/protocol/openid-connect/token`,
-                userInfoURL: `${host}/auth/realms/${realm}/protocol/openid-connect/userinfo`,
+                userInfoURL: `${host}/realms/${realm}/protocol/openid-connect/userinfo`,
             },
     
             async (accessToken, refreshToken, profile, done) => {
