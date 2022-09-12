@@ -1,7 +1,7 @@
 #!/bin/bash
 # Requirements: jq https://stedolan.github.io/jq/
-KC_HOST="http://localhost:8080"
-UNLEASH_HOST="http://localhost:4242"
+KC_HOST="${KC_HOST:-http://localhost:8080}"
+UNLEASH_HOST="${UNLEASH_HOST:-http://localhost:4242}"
 
 export ACCESS_TOKEN=$(curl -X POST "${KC_HOST}/realms/master/protocol/openid-connect/token" -H 'Accept: application/json' -d "username=admin" -d "password=admin" -d "grant_type=password" -d "client_id=admin-cli" | jq -r '.access_token')
 
