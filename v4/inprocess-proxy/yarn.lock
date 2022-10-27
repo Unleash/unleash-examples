@@ -462,12 +462,26 @@
     swagger-parser "^10.0.3"
     swagger-ui-dist "^4.10.3"
 
-"@unleash/proxy@^0.10.0":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@unleash/proxy/-/proxy-0.10.1.tgz#26f5103cbd349d6a5658dab6cfb1453739a21a61"
-  integrity sha512-TGr3aXyPoEW56nuNyCG1Iqf4Gshw1B2rphjtj9r/1kZBDPUeXOELyMQerJgBbSaatlEHlIR6o/kWoGwVAuRjag==
+"@unleash/express-openapi@^0.2.1-beta.0":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@unleash/express-openapi/-/express-openapi-0.2.1.tgz#ecbba742dad0a05c1563f35e3272ee3671dc478d"
+  integrity sha512-wvwgSrzMGo3khB2E/xPLXlB/uT6FruszIsUDThJpttILtxBmj1SDWb0L6SG1CQ2tlnC786/6+0iSBwcz0fViOg==
   dependencies:
-    "@unleash/express-openapi" "^0.2.0"
+    ajv "^6.10.2"
+    http-errors "^1.7.3"
+    merge-deep "^3.0.2"
+    path-to-regexp "^2.4.0"
+    router "^1.3.3"
+    serve-static "^1.13.2"
+    swagger-parser "^10.0.3"
+    swagger-ui-dist "^4.10.3"
+
+"@unleash/proxy@^0.11.0":
+  version "0.11.5"
+  resolved "https://registry.yarnpkg.com/@unleash/proxy/-/proxy-0.11.5.tgz#af75edac749e63b1ff2f95a27f06d33cab577df4"
+  integrity sha512-ZePDM+xe+cWzthF+iJjHb9oWQjPCbdpbVCUH01qusw/MeOYWnlQnyfavzwiYRMtVHkI2QRyUDLWOjR8/ygKxLA==
+  dependencies:
+    "@unleash/express-openapi" "^0.2.1-beta.0"
     compression "^1.7.4"
     cors "^2.8.5"
     express "^4.18.1"
