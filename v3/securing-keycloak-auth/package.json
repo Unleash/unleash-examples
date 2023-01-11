@@ -11,6 +11,6 @@
   "dependencies": {
     "@exlinc/keycloak-passport": "^1.0.2",
     "passport": "^0.6.0",
-    "unleash-server": "^3.17.6"
+    "unleash-server": "^4.19.1"
   }
 }
