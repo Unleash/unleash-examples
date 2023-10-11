@@ -27,7 +27,7 @@
     "eslint-config-airbnb-typescript": "17.0.0",
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-prettier": "5.0.1",
     "prettier": "2.8.4",
     "ts-jest": "29.1.0",
     "ts-node": "10.9.1",
