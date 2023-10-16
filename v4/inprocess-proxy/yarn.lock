@@ -473,10 +473,10 @@
     swagger-parser "^10.0.3"
     swagger-ui-dist "^4.10.3"
 
-"@unleash/express-openapi@^0.2.1-beta.0":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@unleash/express-openapi/-/express-openapi-0.2.1.tgz#ecbba742dad0a05c1563f35e3272ee3671dc478d"
-  integrity sha512-wvwgSrzMGo3khB2E/xPLXlB/uT6FruszIsUDThJpttILtxBmj1SDWb0L6SG1CQ2tlnC786/6+0iSBwcz0fViOg==
+"@unleash/express-openapi@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@unleash/express-openapi/-/express-openapi-0.3.0.tgz#3d65aeafc265732cf83c57b1d18452b5d0904856"
+  integrity sha512-rcbRNoL689knbemaTbL17FOb94hagr5T/vUUUZ1Fb107SGlBbOoQErf0tHlWpeCs6ffkM6uxo5BUnOAaf6CYDA==
   dependencies:
     ajv "^6.10.2"
     http-errors "^1.7.3"
@@ -487,18 +487,19 @@
     swagger-parser "^10.0.3"
     swagger-ui-dist "^4.10.3"
 
-"@unleash/proxy@^0.13.0":
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/@unleash/proxy/-/proxy-0.13.0.tgz#9971ec1ed605fc9a8f7bc2311c8f7dfd5493e92a"
-  integrity sha512-Wc/aByRn3V8cHTY4LU0vdUv056lz+spTbksPSQ9jJQmw5OE/4XzY2/xFY+suF6fBObWX3qltERnScaccVt3uYQ==
+"@unleash/proxy@^0.18.0":
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/@unleash/proxy/-/proxy-0.18.0.tgz#e52b7676a6763442e03978b8a5cbe6c426044d2a"
+  integrity sha512-389oAn3boFiozWIGGvKPy7b7Fcw4FZV9AM+jtk/3T02Co6r6Oz0l4wRej/S8auoNP0lAkO+wPrhYiofVPb4+kg==
   dependencies:
-    "@unleash/express-openapi" "^0.2.1-beta.0"
+    "@unleash/express-openapi" "^0.3.0"
     compression "^1.7.4"
     cors "^2.8.5"
     express "^4.18.2"
     json-schema-to-ts "^2.3.0"
     openapi-types "^11.0.0"
-    unleash-client "^3.15.0"
+    type-is "^1.6.18"
+    unleash-client "^4.2.0"
 
 accepts@~1.3.5, accepts@~1.3.7, accepts@~1.3.8:
   version "1.3.8"
@@ -2288,6 +2289,11 @@ ip@^1.1.5:
   resolved "https://registry.npmjs.org/ip/-/ip-1.1.5.tgz"
   integrity sha1-vd7XARQpCCjAoDnnLvJfWq7ENUo=
 
+ip@^1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.8.tgz#ae05948f6b075435ed3307acce04629da8cdbf48"
+  integrity sha512-PuExPYUiu6qMBQb4l06ecm6T6ujzhmh+MeJcW9wa89PoAz5pvd4zPgN5WJV104mb6S2T1AwNIAaB70JNrLQWhg==
+
 ipaddr.js@1.9.1:
   version "1.9.1"
   resolved "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.9.1.tgz"
@@ -2764,10 +2770,32 @@ make-error@1.x, make-error@^1.1.1:
   resolved "https://registry.npmjs.org/make-error/-/make-error-1.3.6.tgz"
   integrity sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==
 
-make-fetch-happen@^10.0.0, make-fetch-happen@^10.1.2:
+make-fetch-happen@^10.1.2:
   version "10.1.8"
   resolved "https://registry.yarnpkg.com/make-fetch-happen/-/make-fetch-happen-10.1.8.tgz#3b6e93dd8d8fdb76c0d7bf32e617f37c3108435a"
   integrity sha512-0ASJbG12Au6+N5I84W+8FhGS6iM8MyzvZady+zaQAu+6IOaESFzCLLD0AR1sAFF3Jufi8bxm586ABN6hWd3k7g==
+  dependencies:
+    agentkeepalive "^4.2.1"
+    cacache "^16.1.0"
+    http-cache-semantics "^4.1.0"
+    http-proxy-agent "^5.0.0"
+    https-proxy-agent "^5.0.0"
+    is-lambda "^1.0.1"
+    lru-cache "^7.7.1"
+    minipass "^3.1.6"
+    minipass-collect "^1.0.2"
+    minipass-fetch "^2.0.3"
+    minipass-flush "^1.0.5"
+    minipass-pipeline "^1.2.4"
+    negotiator "^0.6.3"
+    promise-retry "^2.0.1"
+    socks-proxy-agent "^7.0.0"
+    ssri "^9.0.0"
+
+make-fetch-happen@^10.2.1:
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/make-fetch-happen/-/make-fetch-happen-10.2.1.tgz#f5e3835c5e9817b617f2770870d9492d28678164"
+  integrity sha512-NgOPbRiaQM10DYXvN3/hhGVI2M5MtITFryzBGxHM5p4wnFxsVCbxkrBrDsk+EZ5OB4jEOT7AjDxtdF+KVEFT7w==
   dependencies:
     agentkeepalive "^4.2.1"
     cacache "^16.1.0"
@@ -3732,7 +3760,7 @@ safe-stable-stringify@^2.3.1:
   resolved "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-semver@7.x, semver@^7.3.4, semver@^7.3.5, semver@^7.3.7:
+semver@7.x, semver@^7.3.4, semver@^7.3.5, semver@^7.3.7, semver@^7.5.3:
   version "7.5.4"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.4.tgz#483986ec4ed38e1c6c48c34894a9182dbff68a6e"
   integrity sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==
@@ -4321,15 +4349,15 @@ universalify@^2.0.0:
   resolved "https://registry.npmjs.org/universalify/-/universalify-2.0.0.tgz"
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
 
-unleash-client@^3.15.0:
-  version "3.15.0"
-  resolved "https://registry.yarnpkg.com/unleash-client/-/unleash-client-3.15.0.tgz#6ba4d917a0d8d628e73267ae8114d261d210a1a9"
-  integrity sha512-pNfzJa7QWhtSMTGNhmanpgqjg3xIJK4gJgQiZdkJlUY6GPDXit8p4fGs94jC8zM/xzpa1ji9+sSx6GC9YDeCiQ==
+unleash-client@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/unleash-client/-/unleash-client-4.2.0.tgz#18fe74baa3d369c7450a9d52f98a14cb3aab50d8"
+  integrity sha512-HFkJhZ4EkljbF5t+xyWAcC/s7TstM2g5N0EkCbzFp1hWEhym1PV2JhhIk8sbdYQ99d/e9tPWQkAv6a1K6miTnA==
   dependencies:
-    ip "^1.1.5"
-    make-fetch-happen "^10.0.0"
+    ip "^1.1.8"
+    make-fetch-happen "^10.2.1"
     murmurhash3js "^3.0.1"
-    semver "^7.3.5"
+    semver "^7.5.3"
 
 unleash-frontend@4.12.4:
   version "4.12.4"
