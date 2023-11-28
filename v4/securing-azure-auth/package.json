@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@passport-next/passport": "^3.1.0",
-    "passport": "^0.6.0",
+    "passport": "^0.7.0",
     "passport-azure-ad": "^4.3.3",
     "unleash-server": "^4.12.6"
   }

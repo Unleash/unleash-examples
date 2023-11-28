@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@exlinc/keycloak-passport": "^1.0.2",
-    "passport": "^0.6.0",
+    "passport": "^0.7.0",
     "unleash-server": "^4.12.6"
   }
 }
