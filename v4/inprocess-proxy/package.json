@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@unleash/proxy": "^0.13.0",
-    "unleash-server": "^4.12.6",
+    "unleash-server": "^6.0.0",
     "winston": "^3.7.2"
   },
   "devDependencies": {
