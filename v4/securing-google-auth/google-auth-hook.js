@@ -20,8 +20,7 @@
  */
 
 const passport = require('@passport-next/passport');
-const GoogleOAuth2Strategy = require('@passport-next/passport-google-oauth2')
-    .Strategy;
+const GoogleStrategy = require('passport-google-oidc'):
 
 const  { AuthenticationRequired } = require('unleash-server');
 
@@ -30,14 +29,14 @@ function enableGoogleOauth(app, config, services) {
     const { userService } = services;
 
     passport.use(
-        new GoogleOAuth2Strategy(
+        new Googletrategy(
             {
                 clientID: process.env.GOOGLE_CLIENT_ID,
                 clientSecret: process.env.GOOGLE_CLIENT_SECRET,
                 callbackURL: process.env.GOOGLE_CALLBACK_URL,
             },
-    
-            async (accessToken, refreshToken, profile, done) => {
+
+            async (issuer, profile, done) => {
                 const email  = profile.emails[0].value;
                 const user = await userService.loginUserWithoutPassword(email, true);
                 done(
