@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@types/express": "4.17.13",
-    "@types/node": "18.19.32",
+    "@types/node": "18.19.59",
     "@typescript-eslint/eslint-plugin": "5.47.1",
     "@typescript-eslint/parser": "5.47.1",
     "del-cli": "5.0.0",
