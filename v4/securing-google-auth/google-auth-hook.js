@@ -20,7 +20,7 @@
  */
 
 const passport = require('@passport-next/passport');
-const GoogleStrategy = require('passport-google-oidc'):
+const GoogleStrategy = require('passport-google-oidc');
 
 const  { AuthenticationRequired } = require('unleash-server');
 
