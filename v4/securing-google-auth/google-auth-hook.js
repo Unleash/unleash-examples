@@ -29,7 +29,7 @@ function enableGoogleOauth(app, config, services) {
     const { userService } = services;
 
     passport.use(
-        new Googletrategy(
+        new GoogleStrategy(
             {
                 clientID: process.env.GOOGLE_CLIENT_ID,
                 clientSecret: process.env.GOOGLE_CLIENT_SECRET,
